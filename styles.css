@@ -123,8 +123,6 @@ textarea:not([rows]) {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-300);
-
-    margin: 0 auto;
 }
 
 .card-thumbnail {
@@ -150,7 +148,7 @@ textarea:not([rows]) {
 }
 
 .article-publish-date {
-    color: var(--gray-500);
+    color: var(--gray-950);
     font: var(--text-preset-3);
     font-size: var(--spacing-150);
 }
@@ -191,6 +189,9 @@ textarea:not([rows]) {
 .attribution {
     font-size: 0.625rem;
     text-align: center;
+    padding: 1% 0;
+    position: absolute;
+    bottom: 0;
 }
 
 @media (min-width: 376px) {
