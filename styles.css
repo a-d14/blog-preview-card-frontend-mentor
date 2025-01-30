@@ -58,7 +58,7 @@ ol[role='list'] {
 body {
   min-height: 100vh;
   background-color: var(--yellow);
-  padding: 0 1%;
+  padding: 0 4%;
 
   display: flex;
   flex-direction: column;
@@ -112,8 +112,8 @@ textarea:not([rows]) {
 }
 
 .card {
-    max-width: 20.43rem;
-    height: 31.31rem;
+    max-width: 24rem;
+    height: auto;
     padding: 1.5rem;
     background-color: var(--white);
     border: 1px solid var(--gray-950);
@@ -129,9 +129,7 @@ textarea:not([rows]) {
     display: block;
     max-width: 100%;
     height: auto;
-    height: 12.5rem;
     border-radius: 0.625rem;
-    object-fit: cover;
 }
 
 .card-body {
@@ -195,11 +193,6 @@ textarea:not([rows]) {
 }
 
 @media (min-width: 376px) {
-    .card {
-        max-width: 24rem;
-        height: 32.625rem;
-    }
-
     .article-publish-date {
         font: var(--text-preset-3);
         font-size: 0.875rem;
