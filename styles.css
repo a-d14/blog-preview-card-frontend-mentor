@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'Figtree Extra Bold';
+    src: url(./assets/fonts/static/Figtree-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: 'Figtree Medium';
+    src: url(./assets/fonts/static/Figtree-Medium.ttf);
+}
+
 :root {
     --yellow: #F4D04E;
     --gray-950: #111111;
@@ -8,8 +18,12 @@
     --spacing-150: 0.75rem;
     --spacing-100: 0.5rem;
     --spacing-50: 0.25rem;
-}
 
+    --text-preset-1: 1.5rem/1.5 'Figtree Extra Bold', sans-serif;
+    --text-preset-2: 1rem/1.5 'Figtree Medium', sans-serif;
+    --text-preset-3: 0.875rem/1.5 'Figtree Medium', sans-serif;
+    --text-preset-3-bold: 0.875rem/1.5 'Figtree Extra Bold', sans-serif;
+}
 
 /* Box sizing rules */
 *,
@@ -43,15 +57,15 @@ ol[role='list'] {
 /* Set core body defaults */
 body {
   min-height: 100vh;
-  line-height: 1.5;
   background-color: var(--yellow);
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   gap: var(--spacing-300);
+
+  font: var(--text-preset-2);
 }
 
 /* Set shorter line heights on headings and interactive elements */
@@ -136,6 +150,13 @@ textarea:not([rows]) {
 
 .article-publish-date {
     color: var(--gray-500);
+    font: var(--text-preset-3);
+    font-size: var(--spacing-150);
+}
+
+.article-title {
+    font: var(--text-preset-1);
+    font-size: 1.25rem;
 }
 
 .article-title:hover {
@@ -145,6 +166,7 @@ textarea:not([rows]) {
 
 .article-description {
     color: var(--gray-500);
+    font-size: 0.875rem;
 }
 
 .card-footer {
@@ -159,9 +181,34 @@ textarea:not([rows]) {
     height: auto;
 }
 
+.article-tag,
+.author-name {
+    font: var(--text-preset-3-bold);
+    font-size: var(--spacing-150);
+}
+
 @media (min-width: 376px) {
     .card {
         width: 24rem;
         height: 32.625rem;
     }
+
+    .article-publish-date {
+        font: var(--text-preset-3);
+        font-size: 1rem;
+    }
+
+    .article-title {
+        font: var(--text-preset-1);
+    }
+
+    .article-description {
+        font-size: 1rem;
+    }
+
+    .article-tag,
+    .author-name {
+        font: var(--text-preset-3-bold)
+    }
+
 }
