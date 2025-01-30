@@ -201,7 +201,7 @@ textarea:not([rows]) {
 
     .article-publish-date {
         font: var(--text-preset-3);
-        font-size: 1rem;
+        font-size: 0.875rem;
     }
 
     .article-title {
