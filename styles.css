@@ -195,7 +195,7 @@ textarea:not([rows]) {
 
 @media (min-width: 376px) {
     .card {
-        width: 24rem;
+        max-width: 24rem;
         height: 32.625rem;
     }
 
@@ -206,6 +206,7 @@ textarea:not([rows]) {
 
     .article-title {
         font: var(--text-preset-1);
+        font-size: 1.5rem;
     }
 
     .article-description {
